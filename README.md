@@ -61,3 +61,9 @@ cargo run
 # 清理生成的文件
 cargo clean
 ```
+
+## Unit Test
+
+```bash
+cargo test
+```
