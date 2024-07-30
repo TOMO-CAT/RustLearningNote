@@ -1,5 +1,9 @@
 {
     "cSpell.enableFiletypes": [
+        "!toml",
         "!markdown"
+    ],
+    "cSpell.words": [
+        "actix"
     ]
 }
