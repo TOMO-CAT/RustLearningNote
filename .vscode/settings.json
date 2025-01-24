@@ -4,6 +4,8 @@
         "!markdown"
     ],
     "cSpell.words": [
-        "actix"
+        "actix",
+        "rustc",
+        "tlsv"
     ]
 }
