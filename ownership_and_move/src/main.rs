@@ -142,6 +142,7 @@ fn copy() {
 }
 
 #[test]
+#[allow(non_snake_case)]
 fn Rc_and_Arc() {
     // Rust 提供了引用计数型指针 Rc 和 Arc
     // 1. Arc 是原子引用计数的缩写 (Atomic Reference Counting)
@@ -153,7 +154,9 @@ fn Rc_and_Arc() {
     // 对于任意类型 T, Rc<T> 是一个附带引用计数的在堆上分配的 T 型指针
     // 克隆一个 Rc<T> 并不会复制 T, 只会创建另一个指向它的指针并递增引用计数
     let s: Rc<String> = Rc::new("cat".to_string());
+    #[allow(unused_variables)]
     let t: Rc<String> = s.clone();
+    #[allow(unused_variables)]
     let u: Rc<String> = s.clone();
 
     // Rc 指针拥有的值是不可变的, 所以你不能修改 Rc 指针指向的值
