@@ -2,9 +2,10 @@
 
 * basic-data-structure
 * tutorial
-* ownership_and_move
+* ownership-and-move
 * reference
 * expression
+* error-handling
 
 ## install
 
