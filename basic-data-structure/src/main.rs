@@ -156,10 +156,11 @@ fn string() {
     "###
     );
     // 如果一个字符串的一行以 \ 结尾, 那么就会舍弃其后的换行符和前导空格
-    println!("It was a bright, cold day in April, and \
+    println!(
+        "It was a bright, cold day in April, and \
         there were four of us——\
-        more or less.");
-
+        more or less."
+    );
 
     // 字节串
     // 1. 带有 b 前缀的字符串字面量都是字节串, 它是 u8 值(字节)
@@ -175,7 +176,7 @@ fn string() {
     // 5. 每个 String 在堆上分配了自己的缓冲区, 不会和任何 String 共享, String 变量超过作用域时缓冲区自动释放 (除非被移动)
     // 6. String 更像是 vec<T>, &str 更像是 &[T]
     let noodles = "noodles".to_string();
-    let _oodles = &noodles[1..];  // &str
+    let _oodles = &noodles[1..]; // &str
 
     // String 或 &str 的 .len() 方法会返回长度 (但是这个长度是以字节而不是字符为单位)
     assert_eq!("🐍".len(), 4);
@@ -186,7 +187,7 @@ fn string() {
 fn alias() {
     // 类似于 C++ 的 typedef, type 关键字可以为现有类型声明一个新名称
     type Bytes = Vec<u8>;
-    let _foo : Bytes = vec![1, 2, 3];
+    let _foo: Bytes = vec![1, 2, 3];
 }
 
 fn main() {}
