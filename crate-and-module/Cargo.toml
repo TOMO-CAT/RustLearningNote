@@ -1,0 +1,16 @@
+[package]
+name = "crate-and-module"
+version = "0.1.0"
+edition = "2021"          # Rust 版本
+
+[dependencies]
+
+# cargo build --release
+[profile.release]
+debug = true # 在 release 构建中启用 debug 符号
+
+# cargo build
+[profile.dev]
+
+# cargo test
+[profile.test]
